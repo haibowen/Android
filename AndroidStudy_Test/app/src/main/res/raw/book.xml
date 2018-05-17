@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infos>
+    <book id="JAVA">
+        <title>Think in JAVA</title>
+        <price>$99.0元</price>
+        <time>2003</time>
+
+    </book>
+    <book id="Python">
+        <title>Tenserflow</title>
+        <price>$44.0元</price>
+        <time>2015</time>
+
+    </book>
+    <book id="PHP">
+        <title>PHPADMIN</title>
+        <price>$65.0元</price>
+        <time>2009</time>
+
+    </book>
+</infos>

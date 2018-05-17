@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">androidStudy03</string>
+    <string name="button">button</string>
+    <string name="context">context</string>
+    <string name="search">search</string>
+    <string name="alert">Toast</string>
+    <string name="fanhui">back</string>
+    <string name="next">next</string>
+</resources>

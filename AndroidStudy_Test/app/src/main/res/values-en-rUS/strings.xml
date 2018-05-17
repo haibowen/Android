@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidStudy_Test</string>
+    <string name="zhnaghao">Account</string>
+    <string name="mima">Password</string>
+    <string name="denglu">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="book">book of price</string>
+</resources>
