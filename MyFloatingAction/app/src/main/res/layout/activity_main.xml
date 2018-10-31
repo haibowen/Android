@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        fab:fab_addButtonColorNormal="@color/colorAccent"
+        fab:fab_icon="@drawable/ic_add_24dp"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_1"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/ic_timer_black_24dp"
+            fab:fab_title="第一个FAB"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_2"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/ic_accessibility_black_24dp"
+            fab:fab_title="第二个FAB"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</FrameLayout>

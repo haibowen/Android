@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">签到</string>
+
+  <string name="text_sign">点击签到</string>
+</resources>
