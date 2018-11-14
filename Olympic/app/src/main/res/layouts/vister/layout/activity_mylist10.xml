@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="list.Mylist10Activity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    android:text="有舵雪橇简介"
+    android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="它有一个雪车可以让选手坐进去，里面还有方向盘和制动装置。运动员着专业的防护装置，出发信号发出后，选手推动雪车，然后飞进座位里面，前面选手掌握方向，后面选手控制制动装置。"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

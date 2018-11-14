@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.wenhaibo.olympic">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+
+    </uses-permission>
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="2022冬奥小助手"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="label">
+        <activity
+            android:name="com.example.wenhaibo.vister.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.wenhaibo.vister.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.wenhaibo.vister.MapActivity" />
+
+        <!-- 设置高德key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f001f3f70f0febe64c1cbe71ef3f1932" />
+
+        <activity android:name="map.IndexActivity" />
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".GPSNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".BasicNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".BaseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".AmapTTSController"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".CheckPermissionsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <service
+            android:name=".service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.wenhaibo.vister.RegisterActivity" />
+        <activity android:name="com.example.wenhaibo.vister.SportListActivity" />
+        <activity android:name="com.example.wenhaibo.vister.ScanActivity" />
+        <activity android:name="com.example.wenhaibo.vister.FunctionActivity" />
+        <activity android:name="com.example.wenhaibo.vister.MipcaActivityCapture" />
+        <activity
+            android:name="player.PlayerActivity"
+            android:label="Player" />
+        <activity
+            android:name="worker.WorkerActivity"
+            android:label="Worker" />
+        <activity
+            android:name="worker.TaskActivity"
+            android:label="Worker" />
+        <activity
+            android:name="worker.JobActivity"
+            android:label="Worker" />
+        <activity
+            android:name="worker.SpeakerActivity"
+            android:label="Worker" />
+        <activity
+            android:name="note.ContentActivity"
+            android:label="Note" />
+        <activity
+            android:name="note.ItemActivity"
+            android:label="Note" />
+        <activity
+            android:name="note.ShareContentActivity"
+            android:label="Note" />
+        <activity android:name="list.Mylist1Activity" />
+        <activity android:name="list.Mylist2Activity" />
+        <activity android:name="list.Mylist3Activity" />
+        <activity android:name="list.Mylist4Activity" />
+        <activity android:name="list.Mylist5Activity" />
+        <activity android:name="list.Mylist6Activity" />
+        <activity android:name="list.Mylist7Activity" />
+        <activity android:name="list.Mylist8Activity" />
+        <activity android:name="list.Mylist9Activity" />
+        <activity android:name="list.Mylist10Activity" />
+        <activity android:name="list.Mylist11Activity" />
+        <activity android:name="list.Mylist12Activity" />
+        <activity android:name="list.Mylist13Activity" />
+        <activity android:name="list.Mylist14Activity" />
+        <activity android:name="list.Mylist15Activity" />
+        <activity
+            android:name="com.example.wenhaibo.vister.HotelActivity"
+            android:label="Hotel" />
+        <activity
+            android:name="com.example.wenhaibo.vister.FoodActivity"
+            android:label="Food" />
+        <activity android:name="newnote.NoteActivity" />
+        <activity android:name="newnote.noteEdit" />
+        <activity
+            android:name="com.example.wenhaibo.vister.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.wenhaibo.vister.WeatherActivity" />
+        <activity android:name="com.example.wenhaibo.vister.GameActivity" />
+        <activity android:name="com.example.wenhaibo.vister.Mainweather" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name="com.example.wenhaibo.vister.SingupActivity" />
+        <activity android:name="com.example.wenhaibo.vister.HeartRate" />
+        <activity android:name="CookFood.cook_book_StepActivity" />
+        <activity android:name="CookFood.cook_book_MainActivity" />
+        <activity android:name="secondnote.NoteMainActivity" />
+        <activity android:name="secondnote.SecondNoteEdit" />
+        <activity android:name="com.example.wenhaibo.vister.PlayerJokeActivity"></activity>
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="	1196171113178221#olympic" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="chat.RegistActivity"></activity>
+        <activity android:name="chat.StartActivity"></activity>
+        <activity android:name="chat.ChatActivity"></activity>
+    </application>
+
+</manifest>

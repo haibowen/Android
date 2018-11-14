@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="list.Mylist14Activity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    android:text="北欧两项简介"
+    android:gravity="center"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="是越野滑雪和跳台滑雪的结合体，比赛第一天是进行跳台滑雪，把跳台滑雪的所得的分数转化为以秒计算的时间，根据时间的长短，决定第二天越野比赛的站位。比如跳台滑雪第一名在越野滑雪中也是第一个开始滑雪，然后根据第二名和第一名相差的时间，第二名比第一名晚出发此时间差，依次类推，最后谁先到达终点谁赢。"
+        />
+</LinearLayout>

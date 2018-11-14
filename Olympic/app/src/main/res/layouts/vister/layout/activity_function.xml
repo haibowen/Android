@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7bffffff"
+
+    tools:context="com.example.wenhaibo.vister.FunctionActivity">
+
+
+    <GridView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+
+        android:stretchMode="columnWidth"
+        android:id="@+id/GV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:horizontalSpacing="25dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"
+        android:background="#7bffffff"/>
+
+
+</LinearLayout>

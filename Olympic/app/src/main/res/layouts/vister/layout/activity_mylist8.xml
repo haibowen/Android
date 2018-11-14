@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="list.Mylist8Activity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    android:text="单板滑雪简介"
+     android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="就是运动员只用一个滑雪板，通过脚进行力量和方向的传递，在赛道上滑行、跨越障碍，做出技术动作的一种运动方式"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

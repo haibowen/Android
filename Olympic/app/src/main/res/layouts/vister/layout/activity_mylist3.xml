@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="list.Mylist3Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="花样滑冰简介"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="花样滑冰（Figure Skating）是冬季奥运会的正式比赛项目。花样滑冰是冬季奥运会的正式比赛项目。运动员穿着脚底装有冰刀的冰鞋、靠自身力量在冰上滑行，表演预先以技术动作为基础编排的节目，由裁判组评估打分、排出名次。"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

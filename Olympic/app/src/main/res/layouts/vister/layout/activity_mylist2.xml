@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="list.Mylist2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="速度滑冰简介"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="顾名思义，主要就是比的速度，在一定的距离内，看谁速度最快到达终点。速度滑冰根据距离的不同分为短距离、中距离、长距离和全能四项比赛项目。"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

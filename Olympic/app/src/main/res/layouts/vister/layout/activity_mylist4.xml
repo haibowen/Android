@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="list.Mylist4Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="冰球简介"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="它是滑冰运动和曲棍球的结合体，就是运动员穿着冰鞋，拿着冰杆在冰上滑行击打球，进入球门，哪方进的球多，哪方就赢。英达的儿子就一直练的是冰球，冰球运动员最容易受伤的位置是牙齿。"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

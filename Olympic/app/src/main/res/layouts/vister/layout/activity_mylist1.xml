@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="list.Mylist1Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="短道速滑项目简介"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="就是在室内，起点、终点一定的距离下，参赛者都穿着冰刀鞋站在同一个起跑线上，第一轮比赛一般是抽签的方式，决定站位，之后的比赛都按成绩排列，成绩最好的粘在内圈，依次类推。"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="list.Mylist15Activity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="冬季两项简介"
+    android:textSize="40dp"
+    android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="其实冬季两项是越野滑雪和射击的组合体，就是运动员脚穿滑雪板，手拿滑雪杖，后背背着一支射击抢。滑行一段时间，到目标地发射5发子弹，如果命中，则不罚时间，如果没有命中靶子，每发子弹罚一分钟。最后比赛成绩是滑行时间加上惩罚时间。"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>

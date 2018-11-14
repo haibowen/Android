@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    </style>
+    <style name="Widget.AppCompat.Button" parent="Base.Widget.AppCompat.Button"/>
+    默认的状态  背景颜色属性：colorButtonNormal 文字颜色属性:黑色
+    <style name="Widget.AppCompat.Button.Colored" parent="Base.Widget.AppCompat.Button.Colored"/>
+    背景颜色属性:colorAccent 文字颜色属性:白色
+
+    <style name="Widget.AppCompat.Button.Borderless" parent="Base.Widget.AppCompat.Button.Borderless"/>
+    背景颜色属性：透明  文字颜色属性：白色
+
+    <style name="Widget.AppCompat.Button.Borderless.Colored" parent="Base.Widget.AppCompat.Button.Borderless.Colored"/>
+    背景颜色属性：透明 文字颜色属性：colorAccent
+
+    <style name="Widget.AppCompat.Button.Small" parent="Base.Widget.AppCompat.Button.Small"/>
+    背景颜色属性：colorButtonNormal 文字颜色属性:黑色
+
+</resources>

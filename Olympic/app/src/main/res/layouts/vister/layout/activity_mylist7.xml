@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="list.Mylist7Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="自由式滑雪简介"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="运动员双脚穿着滑雪板立在雪上，手里拿着滑雪杖，在雪面上滑行，同时进行各种各样的技术动作，展示一些空中技巧，然后裁判给分，进行排名。"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="list.Mylist6Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="俯式冰橇简介"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="就是运动员俯卧在雪橇上，胸部挨着雪橇，在出发信号发出后，自己给雪橇一个初动力，然后迅速俯卧在雪橇上，冲上赛道，中途允许掉下来，但是到终点的时候必须在雪橇上。"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

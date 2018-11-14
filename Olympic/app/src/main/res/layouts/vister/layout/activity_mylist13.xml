@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="list.Mylist13Activity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    android:text="越野滑雪简介"
+    android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="运动员脚穿滑雪板，手拿滑雪杖，利用滑雪技术越野滑行，比赛场地分为三段，上坡、下坡、平地各占三分之一，以最后谁滑行时间最短获胜"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

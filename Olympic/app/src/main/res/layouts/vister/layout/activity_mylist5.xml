@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="list.Mylist5Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="冰壶简介"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="冰壶是一种高智商和高雅的技巧类运动项目，也称掷冰壶，以最后哪个队的冰壶离圆心远近定胜负。运动员穿着专用冰壶鞋，期间还需要一个专门刷冰的运动员，刷冰是为了减少冰壶与冰面的摩擦力，让它滑的更远，角度更贴近目的地。"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
