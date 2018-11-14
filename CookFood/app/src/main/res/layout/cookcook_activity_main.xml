@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".cook_book_MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入美味"
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_show_name"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_main_cook"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_show_material"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@color/beige"
+            android:id="@+id/tv_show_step"
+            android:onClick="click_step"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:textSize="25dp"
+            android:text="搜索" />
+    </LinearLayout>
+</LinearLayout>
