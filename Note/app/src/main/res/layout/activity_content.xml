@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="db.itheima.com.note.ContentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="10000">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etTittle"
+            android:hint="输入标题"
+            android:gravity="left|top" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:id="@+id/etContent"
+            android:hint="输入内容.....一个人的记忆就是一座城市，时间腐蚀着一切建筑，把高楼和道路全部沙化。如果你不往前走，就会搜索被沙子掩埋。所以我们泪流满面，步步回头，可是只能往前走。总有几分钟，其中的每一秒，你都愿意拿一年去换取。总有几颗泪，其中的每一次抽泣，你都愿意拿满手的承诺去代替。总有几段场景，其中的每幅画面，你都愿意拿全部的力量去铭记。总有几段话，其中的每个字眼，你都愿意拿所有的夜晚去复习。亲爱的，如果一切可以重来，我想和你，永远在一起。"
+            android:gravity="left|top" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:id="@+id/btnSave"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
