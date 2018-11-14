@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#c67825">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnMainActivity"
+                android:text="切换MainActivity"
+                android:layout_margin="10px"
+                android:background="#4eb18d"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSecondActivity"
+                android:text="切换到SecondActivity"
+                android:layout_margin="10px"
+                android:background="#41711f"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnActivityLifeCycle"
+                android:text="切换到ActivityLifeCycle"
+                android:layout_margin="10px"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCaptureActivity"
+                android:text="切换到CaptureActivity"
+                android:background="#BBFFCC"
+                android:layout_margin="10px"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBroadcastActivity"
+                android:text="切换到SendBroadcastActivity"
+                android:background="#FFCCFF"
+                android:layout_margin="10px"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn"
+                android:text="切换到..."/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
