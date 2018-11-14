@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="5dp">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/id_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/icon"/>
+    <FrameLayout
+        android:id="@+id/id__record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/id_icon"
+        android:background="@drawable/c">
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/id__record_anim"
+            android:layout_gravity="center_vertical|center"
+            android:background="@drawable/a"/>
+
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/id__record"
+        android:text=""
+        android:layout_marginRight="3dp"
+        android:textColor="#ffffff"
+        android:id="@+id/id__record_time"/>
+
+</RelativeLayout>
