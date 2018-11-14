@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+            android:checkableBehavior="single">
+        <item
+                android:id="@+id/first"
+                android:icon="@drawable/first"
+                android:title="第一个">
+
+        </item>
+        <item
+                android:id="@+id/second"
+                android:icon="@drawable/search"
+                android:title="第一个">
+
+        </item>
+        <item
+                android:id="@+id/third"
+                android:icon="@drawable/settings"
+                android:title="第一个">
+
+        </item>
+        <item
+                android:id="@+id/fourth"
+                android:icon="@drawable/upload"
+                android:title="第一个">
+
+        </item>
+
+
+    </group>
+    <item app:showAsAction="ifRoom"
+          android:title="@string/app_name">
+        <menu>
+
+            <item
+                    android:title="主题"
+                    android:id="@+id/id_theme"
+                    android:icon="@drawable/upload"
+            >
+            </item>
+            <item
+                    android:id="@+id/id_exit"
+                    android:title="退出"
+                    android:icon="@drawable/upload"
+                    
+            >
+            </item>
+        </menu>
+    </item>
+
+</menu>

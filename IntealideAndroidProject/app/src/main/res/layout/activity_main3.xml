@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="activity.Main3Activity"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toobal"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+
+    >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/PB_1"
+    />
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/PB_2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+    />
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="increase"
+            android:background="@color/colorAccent"
+            android:id="@+id/bt_next_pro"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="dialog"
+            android:background="@color/colorPrimary"
+            android:id="@+id/bt_next_dialog"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="progressdialog"
+            android:background="@color/colorPrimary"
+            android:id="@+id/bt_next_progressdialog"/>
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+    android:background="@drawable/message"
+    android:layout_marginTop="23dp"/>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/message"
+               android:layout_marginTop="23dp"/>
+
+</android.widget.LinearLayout>
