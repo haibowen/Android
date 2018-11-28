@@ -1,4 +1,4 @@
-package com.example.administrator.myviewpager;
+package com.example.administrator.mybottomnativation;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,11 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.zip.Inflater;
-
 public class FileFragment extends Fragment {
 
     private View mview;
+
 
     @Nullable
     @Override

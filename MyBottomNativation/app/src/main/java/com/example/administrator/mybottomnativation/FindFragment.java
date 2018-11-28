@@ -1,4 +1,4 @@
-package com.example.administrator.myviewpager;
+package com.example.administrator.mybottomnativation;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
