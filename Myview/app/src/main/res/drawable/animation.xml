@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <item android:drawable="@color/colorPrimary" android:duration="800"/>
 
-</selector>
+    <item android:drawable="@color/colorAccent" android:duration="800"/>
+    <item android:drawable="@drawable/ic_launcher_background" android:duration="800"/>
+
+
+</animation-list>
