@@ -3,11 +3,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:padding="10dp"
-                android:background="?attr/colorPrimary">
+                android:background="#5677fc">
     <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/touxiang"
             android:layout_centerInParent="true"
             android:id="@+id/icon_image"/>
     <TextView
@@ -15,14 +15,17 @@
             android:layout_height="wrap_content"
             android:id="@+id/email"
             android:layout_alignParentBottom="true"
-            android:text="wenhaibo23456@163.com"
-            android:textSize="14sp"/>
+            android:text="做你想做的，看你想看的！"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/username"
+
             android:layout_above="@id/email"
-            android:text="Wenhaibo"
+            android:text="Welcome"
+            android:layout_centerInParent="true"
             android:textSize="14sp"/>
 
 </RelativeLayout>

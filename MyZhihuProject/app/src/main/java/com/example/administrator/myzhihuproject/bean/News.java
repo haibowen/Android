@@ -1,12 +1,14 @@
-package com.example.administrator.myzhihuproject;
+package com.example.administrator.myzhihuproject.bean;
 
 public class News {
     private  String Title;
     private String Imageid;
+    private String Content;
 
-    public News(String title, String imageid) {
+    public News(String title, String imageid,String content) {
         Title = title;
         Imageid = imageid;
+        Content=content;
     }
 
     public String getTitle() {
@@ -23,5 +25,13 @@ public class News {
 
     public void setImageid(String imageid) {
         Imageid = imageid;
+    }
+
+    public String getContent() {
+        return Content;
+    }
+
+    public void setContent(String content) {
+        Content = content;
     }
 }

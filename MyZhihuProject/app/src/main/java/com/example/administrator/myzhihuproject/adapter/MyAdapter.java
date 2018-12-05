@@ -1,17 +1,20 @@
-package com.example.administrator.myzhihuproject;
+package com.example.administrator.myzhihuproject.adapter;
 
 import android.content.Context;
-import android.media.Image;
+import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
+import com.example.administrator.myzhihuproject.activity.Main2Activity;
+import com.example.administrator.myzhihuproject.bean.News;
+import com.example.administrator.myzhihuproject.R;
 
 import java.util.List;
 
@@ -48,8 +51,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
        }
        View view= LayoutInflater.from(context).inflate(R.layout.recyclerview_item,viewGroup,false);
+       final  ViewHolder holder=new ViewHolder(view);
+       holder.cardView.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               int postion=holder.getAdapterPosition();
+               News news=mlists.get(postion);
+               Intent intent=new Intent(context, Main2Activity.class);
+               intent.putExtra(Main2Activity.TITLE,news.getTitle());
+               intent.putExtra(Main2Activity.IMAGE,news.getImageid());
+               intent.putExtra(Main2Activity.CONTENT,news.getContent());
+               context.startActivity(intent);
 
-       return new ViewHolder(view);
+           }
+       });
+
+       return holder;
 
     }
 
@@ -58,6 +75,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         News news=mlists.get(i);
         viewHolder.textView.setText(news.getTitle());
+        Log.e("wenhaibo", "onBindViewHolder: "+news.getTitle() );
         Glide.with(context).load(news.getImageid()).into(viewHolder.imageView);
 
     }
