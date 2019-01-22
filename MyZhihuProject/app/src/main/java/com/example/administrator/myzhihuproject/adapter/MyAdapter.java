@@ -27,47 +27,47 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         mlists=lists;
     }
 
-    static class  ViewHolder extends  RecyclerView.ViewHolder{
-        CardView cardView;
-        ImageView imageView;
-        TextView textView;
+static class  ViewHolder extends  RecyclerView.ViewHolder{
+    CardView cardView;
+    ImageView imageView;
+    TextView textView;
 
 
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-             cardView= (CardView) itemView;
-             imageView=itemView.findViewById(R.id.item_image);
-             textView=itemView.findViewById(R.id.item_textview);
+    public ViewHolder(@NonNull View itemView) {
+        super(itemView);
+        cardView= (CardView) itemView;
+        imageView=itemView.findViewById(R.id.item_image);
+        textView=itemView.findViewById(R.id.item_textview);
 
 
-        }
     }
+}
 
     @NonNull
     @Override
     public MyAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-       if (context==null){
-           context=viewGroup.getContext();
+        if (context==null){
+            context=viewGroup.getContext();
 
-       }
-       View view= LayoutInflater.from(context).inflate(R.layout.recyclerview_item,viewGroup,false);
-       final  ViewHolder holder=new ViewHolder(view);
-       //点击事件
-       holder.cardView.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               int postion=holder.getAdapterPosition();
-               News news=mlists.get(postion);
-               Intent intent=new Intent(context, Main2Activity.class);
-               intent.putExtra(Main2Activity.TITLE,news.getTitle());
-               intent.putExtra(Main2Activity.IMAGE,news.getImageid());
-               intent.putExtra(Main2Activity.CONTENT,news.getContent());
-               context.startActivity(intent);
+        }
+        View view= LayoutInflater.from(context).inflate(R.layout.recyclerview_item,viewGroup,false);
+        final  ViewHolder holder=new ViewHolder(view);
+        //点击事件
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int postion=holder.getAdapterPosition();
+                News news=mlists.get(postion);
+                Intent intent=new Intent(context, Main2Activity.class);
+                intent.putExtra(Main2Activity.TITLE,news.getTitle());
+                intent.putExtra(Main2Activity.IMAGE,news.getImageid());
+                intent.putExtra(Main2Activity.CONTENT,news.getContent());
+                context.startActivity(intent);
 
-           }
-       });
+            }
+        });
 
-       return holder;
+        return holder;
 
     }
 

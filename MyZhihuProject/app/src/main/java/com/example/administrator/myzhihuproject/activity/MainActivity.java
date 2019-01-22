@@ -36,6 +36,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 import com.example.administrator.myzhihuproject.internet.IsInterent;
 import com.example.administrator.myzhihuproject.internet.MyHttpUtil;
@@ -270,9 +271,23 @@ public class MainActivity extends AppCompatActivity {
 
     //下拉刷新的事件
     public  void ReFresh(){
+
+
+
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
+
+                recyclerView.setLayoutAnimation(  AnimationUtils.loadLayoutAnimation(MainActivity.this,
+                        R.anim.layout_animation_fall_down));
+                recyclerView.getAdapter().notifyDataSetChanged();
+                recyclerView.scheduleLayoutAnimation();
+
+                swipeRefreshLayout.setRefreshing(false);
+
+
+
+                /**
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -300,7 +315,7 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 }).start();
-
+**/
             }
         });
 
