@@ -237,6 +237,7 @@ public class SendFileActivity extends BaseActivity implements DirectActionListen
     @Override
     public void wifiP2pEnabled(boolean enabled) {
         mWifiP2pEnabled = enabled;
+
     }
 
     private WifiP2pInfo wifiP2pInfo;
@@ -297,9 +298,11 @@ public class SendFileActivity extends BaseActivity implements DirectActionListen
 
     @Override
     public void onPeersAvailable(Collection<WifiP2pDevice> wifiP2pDeviceList) {
-        Log.e(TAG, "onPeersAvailable :" + wifiP2pDeviceList.size());
+        Log.e("5200", "onPeersAvailable :" + wifiP2pDeviceList.size());
+        Log.e("5200", "onPeersAvailable: "+wifiP2pDeviceList.toString() );
         this.wifiP2pDeviceList.clear();
         this.wifiP2pDeviceList.addAll(wifiP2pDeviceList);
+        Log.e(TAG, "onPeersAvailable: "+wifiP2pDeviceList.toString() );
         deviceAdapter.notifyDataSetChanged();
         loadingDialog.cancel();
     }

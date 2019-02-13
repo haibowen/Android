@@ -10,6 +10,8 @@ public class Main2Activity extends AppCompatActivity {
     private ListView listView;
     private String [] data={"厂家:高通","型号:MSM8909","内核数:"+CpuUtils.getNumCpuCores(),"主频:"+(float)CpuUtils.getCpuMaxFreq()/1000000+"GHZ"};
 
+    //private String [] data={"厂家:高通","型号:MSM8953","内核数:"+CpuUtils.getNumCpuCores(),"主频:"+(float)CpuUtils.getCpuMaxFreq()/1000000+"GHZ"};
+
     /**
      *
      * "CPU当前频率:"+CpuUtils. getCpuCurFreq() ,"CPU架构:"+ProcCpuInfo.getArchitecture(),"CPU调频策略:"+CpuUtils.getCpuGovernor(),"CPU最大频率:"+CpuUtils.getCpuMaxFreq(),"CPU最小频率"+CpuUtils.getCpuMinFreq(),"CPU频率档位:"+CpuUtils.getCpuAvailableFrequencies(),"CPU支持的调频策略:"+CpuUtils.getCpuAvailableGovernorsSimple()

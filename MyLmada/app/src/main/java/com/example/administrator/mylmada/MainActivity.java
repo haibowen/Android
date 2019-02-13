@@ -1,10 +1,15 @@
 package com.example.administrator.mylmada;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     private Listener listener=(String name,int price)->{
         String id=name+price;
@@ -64,4 +69,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
 }

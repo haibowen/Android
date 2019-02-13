@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="PeopleTest">
+
+    </dbname>
+
+    <version value="5">
+
+    </version>
+    <list>
+
+        <maping class="com.example.administrator.mylitepal.People"/>
+        <maping class="com.example.administrator.mylitepal.Animal"/>
+
+
+
+
+    </list>
+
+
+
+
+</litepal>

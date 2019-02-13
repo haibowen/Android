@@ -1,4 +1,4 @@
-package com.example.administrator.filemanagementassistant.callback;
+package com.example.administrator.mywifip2ptest01;
 
 import android.net.wifi.p2p.WifiP2pDevice;
 import android.net.wifi.p2p.WifiP2pInfo;

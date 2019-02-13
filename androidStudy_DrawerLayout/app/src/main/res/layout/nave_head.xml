@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="@drawable/time2">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/icon_image"
+        android:src="@drawable/touxiang"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:text="haibo@196.com"
+        android:textColor="#252323"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/account"
+        android:text="james harden"
+        android:textColor="#252323"
+        android:textSize="14sp"
+       android:layout_above="@+id/email"/>
+
+</RelativeLayout>

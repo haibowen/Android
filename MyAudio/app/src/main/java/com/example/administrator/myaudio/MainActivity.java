@@ -10,6 +10,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             File file=new File(Environment.getExternalStorageDirectory(),"薛之谦 - 刚刚好.mp3");
             mediaPlayer.setDataSource(file.getPath());
+
             mediaPlayer.prepare();
 
         }catch (Exception e){
@@ -95,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (!mediaPlayer.isPlaying()){
 
                     mediaPlayer.start();
+
                 }
 
                 break;

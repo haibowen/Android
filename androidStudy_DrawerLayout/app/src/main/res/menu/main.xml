@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/call"
+            android:title="call"
+            android:icon="@drawable/call"
+            />
+        <item
+            android:id="@+id/mail"
+            android:title="mail"
+            android:icon="@drawable/mail"/>
+
+        <item
+            android:id="@+id/setting"
+            android:title="setting"
+            android:icon="@drawable/location"/>
+
+        <item
+            android:id="@+id/location"
+            android:title="location"
+            android:icon="@drawable/people"/>
+
+        <item
+            android:id="@+id/help"
+            android:title="help"
+            android:icon="@drawable/setting"/>
+
+
+
+    </group>
+
+</menu>

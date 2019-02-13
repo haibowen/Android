@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+        android:orientation="vertical"
+
+        tools:context="com.example.administrator.mycompanytest02.NoteActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:background="@color/colorPrimary"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="学员信息"
+                        android:textSize="18sp"
+                        android:id="@+id/textpath"
+                        android:textColor="#fff"
+                        android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ListView
+            android:id="@+id/listview"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+    </ListView>
+
+
+    <!--  android:id="@+id/btn_editnote"
+     <android.support.design.widget.FloatingActionButton
+
+            android:id="@+id/btn_editnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add_black_24dp"
+
+            android:elevation="4dp"/>-->
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:id="@+id/btn_editnote"
+
+
+            fab:fab_addButtonColorNormal="@color/colorAccent"
+            fab:fab_icon="@drawable/ic_add_black_24dp"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_labelsPosition="left"
+            android:elevation="4dp"
+
+    />
+
+
+</android.support.design.widget.CoordinatorLayout>

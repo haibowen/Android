@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LoginActivity"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+    </android.support.v7.widget.Toolbar>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LoginActivity"
+        android:orientation="vertical">
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:background="@mipmap/ic_launcher"/>
+    <!--  Name Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <EditText android:id="@+id/input_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textCapWords"
+                  android:hint="用户名"
+                  android:textSize="20dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <EditText android:id="@+id/input_password_singup"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textPassword"
+                  android:hint="密码"
+                  android:textSize="20dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox_auto"
+                android:layout_marginLeft="20dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动登录"/>
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_next"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorAccent"
+
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:text="注册"
+
+    />
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
