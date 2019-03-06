@@ -32,10 +32,11 @@
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
 
-    <include layout="@layout/activity_main">
+    <include layout="@layout/activity_main"
+
+    >
 
     </include>
-
 
 
 </LinearLayout>

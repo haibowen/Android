@@ -1,10 +1,16 @@
 package com.example.administrator.mycompanytest;
 
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
     private ListView listView;
@@ -25,10 +31,16 @@ public class Main2Activity extends AppCompatActivity {
        listView=findViewById(R.id.list_cpu);
 
         ArrayAdapter<String>adapter=new ArrayAdapter<String>(Main2Activity.this,android.R.layout.simple_list_item_1,data);
+
+
         listView.setAdapter(adapter);
 
         Log.e("wenhaibo", "onCreate: "+LcdInfo.getDisplayMetrics(this) );
 
 
     }
+
+
+
+
 }

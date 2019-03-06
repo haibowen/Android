@@ -6,7 +6,9 @@
     android:id="@+id/drawerlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_gravity="start"
+    android:clickable="true">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"

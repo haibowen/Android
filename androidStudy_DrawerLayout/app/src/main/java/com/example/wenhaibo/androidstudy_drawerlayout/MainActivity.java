@@ -14,8 +14,10 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
 
@@ -40,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout swipeRefreshLayout;
     private List<String>data=new ArrayList<>(  );
     private List<String>data1=new ArrayList<>(  );
+    private static final String TAG = "MainActivity";
+
+
 
     @SuppressLint("ResourceAsColor")
     @Override
@@ -47,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
 
+        Log.d(TAG, "onCreate: "+"zhixingle");
         //控件绑定id
         toolbar=findViewById( R.id.toolbar );
         setSupportActionBar(toolbar);
@@ -68,6 +74,54 @@ public class MainActivity extends AppCompatActivity {
             }
         } );
 
+
+        drawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+            }
+
+            @Override
+            public void onDrawerOpened(@NonNull View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerClosed(@NonNull View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+
+            }
+        });
+
+
+
+        drawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+            }
+
+            @Override
+            public void onDrawerOpened(@NonNull View drawerView) {
+
+                Toast.makeText(MainActivity.this,"zhanlaile",Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onDrawerClosed(@NonNull View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+
+            }
+        });
 
         //网络请求数据
         HttpUtil.sendOKHttpRequest( "http://api.jisuapi.com/news/get?channel=头条&start=0&num=40&appkey=39c530448f7f431f", new okhttp3.Callback() {
@@ -226,7 +280,8 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
 
             case android.R.id.home:
-                drawerLayout.openDrawer( GravityCompat.START );
+                //drawerLayout.openDrawer( GravityCompat.START );
+                //drawerLayout.openDrawer(Gravity.START);
                 break;
                 default:
                     break;
@@ -234,4 +289,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
+
 }

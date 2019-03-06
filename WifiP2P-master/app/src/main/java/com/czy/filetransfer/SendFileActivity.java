@@ -20,6 +20,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import android.widget.Toast;
 import com.czy.filetransfer.adapter.DeviceAdapter;
 import com.czy.filetransfer.broadcast.DirectBroadcastReceiver;
 import com.czy.filetransfer.callback.DirectActionListener;
@@ -153,8 +154,11 @@ public class SendFileActivity extends BaseActivity implements DirectActionListen
 
     private void connect() {
         WifiP2pConfig config = new WifiP2pConfig();
+        Log.e("88888", "connect: "+mWifiP2pDevice.deviceAddress );
+        Log.e("88888", "connect: "+config.deviceAddress );
         if (config.deviceAddress != null && mWifiP2pDevice != null) {
             config.deviceAddress = mWifiP2pDevice.deviceAddress;
+           // Log.e("77777", "connect: "+mWifiP2pDevice.deviceAddress );
             config.wps.setup = WpsInfo.PBC;
             showLoadingDialog("正在连接 " + mWifiP2pDevice.deviceName);
             mWifiP2pManager.connect(mChannel, config, new WifiP2pManager.ActionListener() {

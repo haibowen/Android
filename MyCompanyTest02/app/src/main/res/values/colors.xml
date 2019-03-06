@@ -7,4 +7,26 @@
     <color name="background">#e5e5e5</color>
 
     <color name="black_semi_transparent">#B2000000</color>
+
+
+
+
+
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+
+
+    <color name="grey">#ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="darkgrey">#C0C0C0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="darkyellow">#FFCC33</color>
+
+    <color name="welcome_bgc">#FFF000</color>
+    <color name="darkkhaki">#ff0000</color>
+    <color name ="beige">#F5F5DC</color>
 </resources>

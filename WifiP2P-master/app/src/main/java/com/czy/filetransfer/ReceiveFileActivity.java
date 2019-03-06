@@ -215,13 +215,15 @@ public class ReceiveFileActivity extends BaseActivity implements DirectActionLis
             MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
             String mime = mimeTypeMap.getMimeTypeFromExtension(ext.substring(1));
             mime = TextUtils.isEmpty(mime) ? "" : mime;
+            Log.e("11111111", "openFile: "+mime );
             Intent intent = new Intent();
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.setAction(android.content.Intent.ACTION_VIEW);
             intent.setDataAndType(Uri.fromFile(new File(filePath)), mime);
+            Log.e("1111", "openFile: "+Uri.fromFile(new File(filePath)) );
             startActivity(intent);
         } catch (Exception e) {
-            Log.e(TAG, "文件打开异常：" + e.getMessage());
+            Log.e("2222", "文件打开异常：" + e.getMessage());
             showToast("文件打开异常：" + e.getMessage());
         }
     }

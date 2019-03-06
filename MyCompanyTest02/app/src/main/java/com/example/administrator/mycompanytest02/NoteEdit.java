@@ -16,6 +16,8 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import db.NotesDB;
+
 /**
  * Created by wenhaibo on 2017/6/4.
  */

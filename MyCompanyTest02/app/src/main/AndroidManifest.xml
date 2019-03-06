@@ -7,6 +7,14 @@
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
+
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE" />  <!-- 震动权限 -->
+
+    <uses-feature android:name="android.hardware.camera" />        <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -15,20 +23,27 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
 
-        <activity android:name=".Main2Activity">
         </activity>
         <activity android:name=".NoteActivity">
         </activity>
-
         <activity android:name=".NoteEdit">
-
+        </activity>
+        <activity android:name=".SettingActivity">
+        </activity>
+        <activity android:name=".BatteryActivity">
+        </activity>
+        <activity android:name=".CourseActivity">
+        </activity>
+        <activity android:name=".ReentryTestActivity">
         </activity>
     </application>
 
