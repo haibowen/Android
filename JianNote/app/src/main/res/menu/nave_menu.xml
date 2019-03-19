@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/bt_first"
+        android:title="搜索"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"></item>
+
+    <item
+        android:id="@+id/bt_second"
+        android:title="搜索"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"></item>
+
+    <item
+        android:id="@+id/bt_third"
+        android:title="搜索"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"></item>
+
+    <item
+        android:id="@+id/bt_fourth"
+        android:title="搜索"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"></item>
+
+    <item
+        android:id="@+id/bt_five"
+        android:title="搜索"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"></item>
+</menu>
