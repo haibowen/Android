@@ -22,14 +22,28 @@ public class PlayerDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+
+       String CREATE_BOOK = "create table book ("
+
+                + "id integer primary key autoincrement, "
+
+                + "author text, "
+
+                + "price real, "
+
+                + "pages integer, "
+
+                + "name text)";
+
         String sql = "CREATE TABLE " + TABLE_NAME_PLAYERS + "(" + COLUMN_NAME_ID
                 + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + COLUMN_NAME_COUNT + " TEXT NOT NULL DEFAULT\"\","
-                +COLUMN_NAME_SEX+"TEXT NOT NULL DEFAULT\"\","
-                +COLUMN_NAME_NAME+"TEXT NOT NULL DEFAULT\"\","
+                + COLUMN_NAME_SEX + " TEXT NOT NULL DEFAULT\"\","
+                + COLUMN_NAME_NAME + " TEXT NOT NULL DEFAULT\"\","
                 + COLUMN_NAME_GRADE + " TEXT NOT NULL DEFAULT\"\"" + ")";
 
-        db.execSQL(sql);
+       // db.execSQL(sql);
+        db.execSQL(CREATE_BOOK);
 
 
     }
